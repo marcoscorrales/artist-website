@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+// import Gallery from './components/Gallery';
+// import Contact from './components/Contact';
+import Footer from './components/Footer';
+import SocialLinks from './components/SocialLinks';
+import ArtistInfo from './components/ArtistInfo';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="w-full flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <SocialLinks />
+        <ArtistInfo />
+        {/* <Gallery />
+        <Contact /> */}
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
