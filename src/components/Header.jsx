@@ -15,8 +15,8 @@ function Header() {
           <li><a href="#hero" className="hover:underline">Inicio</a></li>
           <li><a href="#socialLinks" className="hover:underline">Redes</a></li>
           <li><a href="#info" className="hover:underline">Información</a></li>
-          <li><a href="#galery" className="hover:underline">Galería</a></li>
-          <li><a href="#contact" className="hover:underline">Contacto</a></li>
+          {/* <li><a href="#galery" className="hover:underline">Galería</a></li>
+          <li><a href="#contact" className="hover:underline">Contacto</a></li> */}
         </ul>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
@@ -29,9 +29,10 @@ function Header() {
       {isOpen && (
         <ul className="md:hidden flex flex-col space-y-2 mt-2">
           <li><a href="#hero" className="block px-4 py-2 hover:bg-blue-600">Inicio</a></li>
-          <li><a href="#events" className="block px-4 py-2 hover:bg-blue-600">Eventos</a></li>
-          <li><a href="#gallery" className="block px-4 py-2 hover:bg-blue-600">Galería</a></li>
-          <li><a href="#contact" className="block px-4 py-2 hover:bg-blue-600">Contacto</a></li>
+          <li><a href="#socialLinks" className="block px-4 py-2 hover:bg-blue-600">Redes</a></li>
+          <li><a href="#info" className="block px-4 py-2 hover:bg-blue-600">Información</a></li>
+          {/* <li><a href="#gallery" className="block px-4 py-2 hover:bg-blue-600">Galería</a></li>
+          <li><a href="#contact" className="block px-4 py-2 hover:bg-blue-600">Contacto</a></li> */}
         </ul>
       )}
     </header>
